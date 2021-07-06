@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+    background-color: whitesmoke;
+    font-family: 'VT323', monospace;
+}
+
+.demineur {
+    display: flex;
+    flex-wrap: wrap;
+    width: 21.50rem;
+    height: auto;
+    margin: auto;
+    border: 12px ridge white;
+    background-color: rgba(219, 210, 210, 1);
+}
+div {
+    border-right:3px dotted black;
+    border-bottom:3px dotted black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+
+}
+.un {
+    color:blue;
+    font-weight: 900;
+
+}
+.deux {
+    color: green;
+    font-weight: 900;
+
+}
+.trois {
+    color:red;
+    font-weight: 900;
+
+}
+img {
+    width: 40px;
+    height: 40px;
+}
+.unclicked {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.unclicked::after {
+    position: absolute;
+    content: "";
+     width: 40px;
+    height: 40px;
+    box-shadow: inset 3px 3px 0 0 white, inset -3px 3px 0 0 grey, inset -4px -4px 0 1px grey;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    top: 0;
+    left: 0;
+    background-color: rgba(219, 210, 210, 1);
+}
+.unclicked:hover::after {
+    display: none;
+}
